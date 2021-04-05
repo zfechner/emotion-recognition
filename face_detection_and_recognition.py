@@ -28,7 +28,7 @@ def draw_rect(x, y, w, h, frame):
 face_cascade = cv.CascadeClassifier(cv.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 cap = cv.VideoCapture(1)
-model = load('filename.joblib')
+model = load('model.joblib')
 
 if not cap.isOpened:
     print('--(!)Error opening video capture')
